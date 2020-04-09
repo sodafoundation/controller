@@ -1,2 +1,0 @@
-# Encryption tool. Default value is aes.
-PwdEncrypter: "aes"
