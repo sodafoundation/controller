@@ -19,7 +19,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/sodafoundation/controller/pkg/dock/client"
+	"github.com/sodafoundation/controller/pkg/controller/dockcontroller/client"
 	"github.com/sodafoundation/controller/pkg/model"
 	pb "github.com/sodafoundation/controller/pkg/model/proto"
 	. "github.com/sodafoundation/controller/testutils/collection"
