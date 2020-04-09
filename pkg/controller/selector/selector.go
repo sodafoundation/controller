@@ -25,9 +25,9 @@ import (
 	"strconv"
 
 	log "github.com/golang/glog"
-	c "github.com/opensds/opensds/pkg/context"
-	"github.com/opensds/opensds/pkg/db"
-	"github.com/opensds/opensds/pkg/model"
+	c "github.com/sodafoundation/controller/pkg/context"
+	"github.com/sodafoundation/controller/pkg/db"
+	"github.com/sodafoundation/controller/pkg/model"
 )
 
 // Selector is an interface that exposes some operation of different selectors.

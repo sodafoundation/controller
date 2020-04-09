@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/opensds/opensds/pkg/utils/constants"
-	"github.com/opensds/opensds/pkg/utils/pwd"
+	"github.com/sodafoundation/controller/pkg/utils/constants"
+	"github.com/sodafoundation/controller/pkg/utils/pwd"
 )
 
 const (

@@ -19,10 +19,10 @@ import (
 	"reflect"
 	"testing"
 
-	c "github.com/opensds/opensds/pkg/context"
-	"github.com/opensds/opensds/pkg/db"
-	"github.com/opensds/opensds/pkg/model"
-	dbtest "github.com/opensds/opensds/testutils/db/testing"
+	c "github.com/sodafoundation/controller/pkg/context"
+	"github.com/sodafoundation/controller/pkg/db"
+	"github.com/sodafoundation/controller/pkg/model"
+	dbtest "github.com/sodafoundation/controller/testutils/db/testing"
 )
 
 func TestSelectSupportedPoolForVolume(t *testing.T) {

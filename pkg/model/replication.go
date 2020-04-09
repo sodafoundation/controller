@@ -18,7 +18,7 @@ This module implements the common data structure.
 
 package model
 
-import "github.com/opensds/opensds/pkg/model/proto"
+import "github.com/sodafoundation/controller/pkg/model/proto"
 
 const (
 	ReplicationModeSync         = "sync"

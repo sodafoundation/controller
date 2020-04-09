@@ -21,8 +21,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/opensds/opensds/pkg/model"
-	. "github.com/opensds/opensds/testutils/collection"
+	"github.com/sodafoundation/controller/pkg/model"
+	. "github.com/sodafoundation/controller/testutils/collection"
 )
 
 var (

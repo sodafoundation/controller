@@ -17,8 +17,8 @@ package client
 import (
 	"strings"
 
-	"github.com/opensds/opensds/pkg/model"
-	"github.com/opensds/opensds/pkg/utils/urls"
+	"github.com/sodafoundation/controller/pkg/model"
+	"github.com/sodafoundation/controller/pkg/utils/urls"
 )
 
 // HostBuilder contains request body of handling a host request.

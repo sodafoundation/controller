@@ -21,7 +21,7 @@ import (
 	"runtime"
 
 	log "github.com/golang/glog"
-	pb "github.com/opensds/opensds/pkg/model/proto"
+	pb "github.com/sodafoundation/controller/pkg/model/proto"
 	"google.golang.org/grpc"
 )
 

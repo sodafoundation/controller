@@ -20,13 +20,13 @@ import (
 	"strings"
 
 	log "github.com/golang/glog"
-	"github.com/opensds/opensds/contrib/drivers/utils/config"
-	c "github.com/opensds/opensds/pkg/context"
-	"github.com/opensds/opensds/pkg/controller/volume"
-	"github.com/opensds/opensds/pkg/db"
-	. "github.com/opensds/opensds/pkg/model"
-	pb "github.com/opensds/opensds/pkg/model/proto"
-	"github.com/opensds/opensds/pkg/utils"
+	"github.com/sodafoundation/controller/pkg/driverconfig"
+	c "github.com/sodafoundation/controller/pkg/context"
+	"github.com/sodafoundation/controller/pkg/controller/volume"
+	"github.com/sodafoundation/controller/pkg/db"
+	. "github.com/sodafoundation/controller/pkg/model"
+	pb "github.com/sodafoundation/controller/pkg/model/proto"
+	"github.com/sodafoundation/controller/pkg/utils"
 	uuid "github.com/satori/go.uuid"
 )
 

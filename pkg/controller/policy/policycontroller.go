@@ -21,8 +21,8 @@ profiles configured by admin.
 package policy
 
 import (
-	"github.com/opensds/opensds/pkg/controller/policy/executor"
-	"github.com/opensds/opensds/pkg/model"
+	"github.com/sodafoundation/controller/pkg/controller/policy/executor"
+	"github.com/sodafoundation/controller/pkg/model"
 )
 
 // Controller is an interface for exposing some operations of different policy

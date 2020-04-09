@@ -18,8 +18,8 @@ import (
 	"encoding/json"
 
 	log "github.com/golang/glog"
-	"github.com/opensds/opensds/pkg/model"
-	. "github.com/opensds/opensds/pkg/utils/config"
+	"github.com/sodafoundation/controller/pkg/model"
+	. "github.com/sodafoundation/controller/pkg/utils/config"
 	"github.com/segmentio/kafka-go"
 )
 
