@@ -26,11 +26,11 @@ import (
 	"time"
 
 	log "github.com/golang/glog"
-	c "github.com/opensds/opensds/pkg/context"
-	"github.com/opensds/opensds/pkg/db"
-	"github.com/opensds/opensds/pkg/dock/client"
-	"github.com/opensds/opensds/pkg/model"
-	pb "github.com/opensds/opensds/pkg/model/proto"
+	c "github.com/sodafoundation/controller/pkg/context"
+	"github.com/sodafoundation/controller/pkg/db"
+	"github.com/sodafoundation/controller/pkg/controller/dockcontroller/client"
+	"github.com/sodafoundation/controller/pkg/model"
+	pb "github.com/sodafoundation/controller/pkg/model/proto"
 )
 
 const (

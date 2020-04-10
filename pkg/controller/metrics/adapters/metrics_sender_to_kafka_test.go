@@ -16,7 +16,7 @@ package adapters
 import (
 	"testing"
 
-	"github.com/opensds/opensds/pkg/model"
+	"github.com/sodafoundation/controller/pkg/model"
 )
 
 func TestKafkaMetricsSender_GetMetricsSender(t *testing.T) {

@@ -22,12 +22,12 @@ package main
 import (
 	"flag"
 
-	c "github.com/opensds/opensds/pkg/controller"
-	"github.com/opensds/opensds/pkg/db"
-	. "github.com/opensds/opensds/pkg/utils/config"
-	"github.com/opensds/opensds/pkg/utils/constants"
-	"github.com/opensds/opensds/pkg/utils/daemon"
-	"github.com/opensds/opensds/pkg/utils/logs"
+	c "github.com/sodafoundation/controller/pkg/controller"
+	"github.com/sodafoundation/controller/pkg/db"
+	. "github.com/sodafoundation/controller/pkg/utils/config"
+	"github.com/sodafoundation/controller/pkg/utils/constants"
+	"github.com/sodafoundation/controller/pkg/utils/daemon"
+	"github.com/sodafoundation/controller/pkg/utils/logs"
 )
 
 func init() {

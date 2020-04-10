@@ -23,9 +23,9 @@ package sample
 import (
 	"errors"
 
-	"github.com/opensds/opensds/pkg/model"
-	pb "github.com/opensds/opensds/pkg/model/proto"
-	. "github.com/opensds/opensds/testutils/collection"
+	"github.com/sodafoundation/controller/pkg/model"
+	pb "github.com/sodafoundation/controller/pkg/model/proto"
+	. "github.com/sodafoundation/controller/testutils/collection"
 )
 
 // Driver

@@ -21,8 +21,8 @@ import (
 	"strings"
 
 	log "github.com/golang/glog"
-	"github.com/opensds/opensds/pkg/model"
-	"github.com/opensds/opensds/pkg/utils"
+	"github.com/sodafoundation/controller/pkg/model"
+	"github.com/sodafoundation/controller/pkg/utils"
 )
 
 // simplifyPoolCapabilityMap ...

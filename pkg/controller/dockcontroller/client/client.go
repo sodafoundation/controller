@@ -1,4 +1,4 @@
-// Copyright 2018 The OpenSDS Authors.
+// Copyright 2017 The OpenSDS Authors.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,35 +19,36 @@ import (
 
 	log "github.com/golang/glog"
 	pb "github.com/sodafoundation/controller/pkg/model/proto"
-
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/connectivity"
 	"google.golang.org/grpc/keepalive"
 )
 
 // Client interface provides an abstract description about how to interact
-// with gRPC client. Besides some nested methods defined in pb.ControllerClient,
+// with gRPC client. Besides some nested methods defined in pb.DockClient,
 // Client also exposes two methods: Connect() and Close(), for which callers
 // can easily open and close gRPC connection.
 type Client interface {
-	pb.ControllerClient
-	pb.FileShareControllerClient
+	pb.ProvisionDockClient
+	pb.AttachDockClient
+	pb.FileShareDockClient
 
 	Connect(edp string) error
 }
 
-// client structure is one implementation of Client interface and will be
+// DockClient structure is one implementation of Client interface and will be
 // called in real environment. There would be more other kind of connection
 // in the long run.
-type client struct {
-	pb.ControllerClient
-	pb.FileShareControllerClient
+type DockClient struct {
+	pb.ProvisionDockClient
+	pb.AttachDockClient
+	pb.FileShareDockClient
 	*grpc.ClientConn
 }
 
-func NewClient() Client { return &client{} }
+func NewClient() Client { return &DockClient{} }
 
-func (c *client) Connect(edp string) error {
+func (c *DockClient) Connect(edp string) error {
 	// Set up a connection to the Dock server.
 	if c.ClientConn != nil && c.ClientConn.GetState() == connectivity.Ready {
 		return nil
@@ -62,9 +63,10 @@ func (c *client) Connect(edp string) error {
 		log.Errorf("did not connect: %+v\n", err)
 		return err
 	}
-	// Create controller client via the connection.
-	c.ControllerClient = pb.NewControllerClient(conn)
-	c.FileShareControllerClient = pb.NewFileShareControllerClient(conn)
+	// Create dock client via the connection.
+	c.FileShareDockClient = pb.NewFileShareDockClient(conn)
+	c.ProvisionDockClient = pb.NewProvisionDockClient(conn)
+	c.AttachDockClient = pb.NewAttachDockClient(conn)
 	c.ClientConn = conn
 
 	return nil

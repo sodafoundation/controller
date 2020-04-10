@@ -19,8 +19,8 @@ import (
 	"time"
 
 	log "github.com/golang/glog"
-	"github.com/opensds/opensds/pkg/model"
-	. "github.com/opensds/opensds/pkg/utils/config"
+	"github.com/sodafoundation/controller/pkg/model"
+	. "github.com/sodafoundation/controller/pkg/utils/config"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/push"
 )

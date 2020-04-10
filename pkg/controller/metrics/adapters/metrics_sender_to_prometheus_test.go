@@ -16,7 +16,7 @@ package adapters
 import (
 	"testing"
 
-	"github.com/opensds/opensds/pkg/model"
+	"github.com/sodafoundation/controller/pkg/model"
 )
 
 var SamplemetricsSpec = []*model.MetricSpec{

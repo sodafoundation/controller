@@ -20,10 +20,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/opensds/opensds/pkg/controller/volume"
-	"github.com/opensds/opensds/pkg/model"
-	pb "github.com/opensds/opensds/pkg/model/proto"
-	. "github.com/opensds/opensds/testutils/collection"
+	"github.com/sodafoundation/controller/pkg/controller/volume"
+	"github.com/sodafoundation/controller/pkg/model"
+	pb "github.com/sodafoundation/controller/pkg/model/proto"
+	. "github.com/sodafoundation/controller/testutils/collection"
 )
 
 var (

@@ -20,15 +20,15 @@ import (
 	"fmt"
 	"testing"
 
-	c "github.com/opensds/opensds/pkg/context"
-	"github.com/opensds/opensds/pkg/controller/dr"
-	"github.com/opensds/opensds/pkg/controller/fileshare"
-	"github.com/opensds/opensds/pkg/controller/volume"
-	"github.com/opensds/opensds/pkg/db"
-	"github.com/opensds/opensds/pkg/model"
-	pb "github.com/opensds/opensds/pkg/model/proto"
-	. "github.com/opensds/opensds/testutils/collection"
-	dbtest "github.com/opensds/opensds/testutils/db/testing"
+	c "github.com/sodafoundation/controller/pkg/context"
+	"github.com/sodafoundation/controller/pkg/controller/dr"
+	"github.com/sodafoundation/controller/pkg/controller/fileshare"
+	"github.com/sodafoundation/controller/pkg/controller/volume"
+	"github.com/sodafoundation/controller/pkg/db"
+	"github.com/sodafoundation/controller/pkg/model"
+	pb "github.com/sodafoundation/controller/pkg/model/proto"
+	. "github.com/sodafoundation/controller/testutils/collection"
+	dbtest "github.com/sodafoundation/controller/testutils/db/testing"
 )
 
 type fakeSelector struct {

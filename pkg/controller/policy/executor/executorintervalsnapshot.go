@@ -29,9 +29,9 @@ import (
 	"time"
 
 	log "github.com/golang/glog"
-	"github.com/opensds/opensds/pkg/dock/client"
-	"github.com/opensds/opensds/pkg/model"
-	pb "github.com/opensds/opensds/pkg/model/proto"
+	"github.com/sodafoundation/controller/pkg/controller/dockcontroller/client"
+	"github.com/sodafoundation/controller/pkg/model"
+	pb "github.com/sodafoundation/controller/pkg/model/proto"
 )
 
 type IntervalSnapshotExecutor struct {

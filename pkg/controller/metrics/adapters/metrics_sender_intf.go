@@ -13,7 +13,7 @@
 // limitations under the License.
 package adapters
 
-import "github.com/opensds/opensds/pkg/model"
+import "github.com/sodafoundation/controller/pkg/model"
 
 type MetricsSenderIntf interface {
 	GetMetricsSender() MetricsSenderIntf

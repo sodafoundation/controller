@@ -24,8 +24,8 @@ import (
 	"errors"
 
 	log "github.com/golang/glog"
-	"github.com/opensds/opensds/pkg/model"
-	pb "github.com/opensds/opensds/pkg/model/proto"
+	"github.com/sodafoundation/controller/pkg/model"
+	pb "github.com/sodafoundation/controller/pkg/model/proto"
 )
 
 // AsynchronizedExecutor

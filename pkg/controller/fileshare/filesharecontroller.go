@@ -25,9 +25,9 @@ import (
 	"fmt"
 
 	log "github.com/golang/glog"
-	"github.com/opensds/opensds/pkg/dock/client"
-	"github.com/opensds/opensds/pkg/model"
-	pb "github.com/opensds/opensds/pkg/model/proto"
+	"github.com/sodafoundation/controller/pkg/controller/dockcontroller/client"
+	"github.com/sodafoundation/controller/pkg/model"
+	pb "github.com/sodafoundation/controller/pkg/model/proto"
 )
 
 // Controller is an interface for exposing some operations of different file share

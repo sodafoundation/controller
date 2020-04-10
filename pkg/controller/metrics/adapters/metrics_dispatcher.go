@@ -15,7 +15,7 @@ package adapters
 
 import (
 	log "github.com/golang/glog"
-	"github.com/opensds/opensds/pkg/model"
+	"github.com/sodafoundation/controller/pkg/model"
 )
 
 // A buffered channel that we can send work requests on.
