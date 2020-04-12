@@ -1,4 +1,4 @@
-# OpenSDS
+# SODA Controller
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/sodafoundation/controller?branch=master)](https://goreportcard.com/report/github.com/sodafoundation/controller)
 [![Build Status](https://travis-ci.org/sodafoundation/controller.svg?branch=master)](https://travis-ci.org/sodafoundation/controller)
@@ -6,54 +6,64 @@
 [![Releases](https://img.shields.io/github/release/sodafoundation/controller/all.svg?style=flat-square)](https://github.com/sodafoundation/controller/releases)
 [![LICENSE](https://img.shields.io/github/license/sodafoundation/controller.svg?style=flat-square)](https://github.com/sodafoundation/controller/blob/master/LICENSE)
 
-<img src="https://www.opensds.io/wp-content/uploads/sites/18/2016/11/logo_opensds.png" width="100">
-
-## Latest Release: v0.10.1 Daito
-
-[OpenAPI doc](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/sodafoundation/controller/v0.10.1/openapi-spec/swagger.yaml)
-
-[Release notes](https://github.com/sodafoundation/controller/releases/tag/v0.10.1)
+<img src="https://sodafoundation.io/wp-content/uploads/2020/01/SODA_logo_outline_color_800x800.png" width="200" height="200">
 
 ## Introduction
 
-The [OpenSDS Project](https://opensds.io/) is a collaborative project under Linux
-Foundation supported by storage users and vendors, including
-Dell EMC, Intel, Huawei, Fujitsu, Western Digital, Vodafone, NTT and Oregon State University. The project
-will also seek to collaborate with other upstream open source communities
-such as Cloud Native Computing Foundation, Docker, OpenStack, and Open
-Container Initiative.
+SODA Controller is an open source implementation for all the control services (like metadata management, scheduler, other bookkeeping, utils etc) . This is currently added a separate repository considering many core services could be developed under this for the overall data store framework.
 
-It is a software defined storage controller that provides
-unified block, file, object storage services and focuses on:
+In the API flow from SODA API to SODA DOCK, controller plays a critical role for all the API flow management and tracking to handle all the state machine and metadata management requirements. This will be a layer to keep addons to new services or facilities or utilities for the soda data platform
 
-* *Simple*: well-defined API that follows the [OpenAPI](https://github.com/OAI/OpenAPI-Specification) specification.
-* *Lightweight*: no external dependencies, deployed once in binary file or container.
-* *Extensible*: pluggable framework available for different storage systems, identity services, capability filters, etc.
+This layer can be optional going forward or pick and use needed services from the controller during the deployment. However, the users need to do certain integration with api and dock for their controller modules in such cases
 
-## Community
+Controller interfaces with SODA api and dock.
 
-The OpenSDS community welcomes anyone who is interested in software defined
-storage and shaping the future of cloud-era storage. If you are a company,
-you should consider joining the [OpenSDS Project](https://opensds.io/).
-If you are a developer and would like to be part of the code development
-that is happening now, please refer to the Contributing sections below.
+This is one of the SODA Core Projects and is maintained by SODA Foundation directly.
 
-## You want to contribute?
+Earlier part of github.com/sodafoundation/opensds Or github.com/opensds/opensds
 
-* [Our Documentation](https://docs.opensds.io/) : 
-You can find the quick start guides and start using OpenSDS releases.
-See [COMMUNITY](https://docs.opensds.io/community/) for details on discussion of the OpenSDS architecture design and feature development.
+## Documentation
 
-## How to start ? 
+[https://docs.sodafoundation.io](https://docs.sodafoundation.io/)
 
-Please refer to [Try OpenSDS](https://docs.opensds.io/try-opensds/) to start using our releases and knowing more.
+## Quick Start - To Use/Experience
 
-## License
+[https://docs.sodafoundation.io](https://docs.sodafoundation.io/)
 
-OpenSDS is under the Apache 2.0 license. See the [LICENSE](LICENSE) file for details.
+## Quick Start - To Develop
 
-## Contact
-* Mailing list: [opensds-tech-discuss](https://lists.opensds.io/mailman/listinfo/opensds-tech-discuss)
-* slack: #[opensds](https://opensds.io/slack)
-* Ideas/Bugs: You can raise your ideas, requirements and issues at any of the projects under [our git organization](https://github.com/opensds/)
-* Join our community meetings. All the details, refer [our global community meeting agenda and notes](http://bit.ly/sodaglobalcommunitymeeting)
+[https://docs.sodafoundation.io](https://docs.sodafoundation.io/)
+
+## Latest Releases
+
+[https://github.com/sodafoundation/controller/releases](https://github.com/sodafoundation/controller/releases)
+
+## Support and Issues
+
+[https://github.com/sodafoundation/controller/issues](https://github.com/sodafoundation/controller/issues)
+
+## Project Community
+
+[https://sodafoundation.io/slack/](https://sodafoundation.io/slack/)
+
+## How to contribute to this project?
+
+Join [https://sodafoundation.io/slack/](https://sodafoundation.io/slack/) and share your interest in the ‘general’ channel
+
+Checkout [https://github.com/sodafoundation/controller/issues](https://github.com/sodafoundation/controller/issues) labelled with ‘good first issue’ or ‘help needed’ or ‘help wanted’ or ‘StartMyContribution’ or ‘SMC’
+
+## Project Roadmap
+
+Envion to build a service layer with a lot of useful services for data store under this project. This could become the core service layer for the soda data platform.
+
+[https://docs.sodafoundation.io](https://docs.sodafoundation.io/)
+
+## Join SODA Foundation
+
+Website : [https://sodafoundation.io](https://sodafoundation.io/)
+
+Slack  : [https://sodafoundation.io/slack/](https://sodafoundation.io/slack/)
+
+Twitter  : @sodafoundation
+
+Mailinglist  : [https://lists.opensds.io](https://lists.opensds.io/groups)
