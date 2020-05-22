@@ -54,7 +54,7 @@ Checkout [https://github.com/sodafoundation/controller/issues](https://github.co
 
 ## Project Roadmap
 
-Envion to build a service layer with a lot of useful services for data store under this project. This could become the core service layer for the soda data platform.
+Envision to build a service layer with a lot of useful services for data store under this project. This could become the core service layer for the soda data platform.
 
 [https://docs.sodafoundation.io](https://docs.sodafoundation.io/)
 
