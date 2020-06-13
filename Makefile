@@ -20,6 +20,8 @@ VERSION ?= $(shell git describe --exact-match 2> /dev/null || \
 		 --always --dirty --abbrev=8)
 BUILD_TGT := soda-controller-$(VERSION)-linux-amd64
 
+export GO111MODULE=on
+
 all: build
 
 ubuntu-dev-setup:
