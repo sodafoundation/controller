@@ -1,7 +1,7 @@
 # Docker build usage:
-# 	docker build . -t opensdsio/opensds-controller:latest
+# 	docker build . -t sodafoundation/controller:latest
 # Docker run usage:
-# 	docker run -d --net=host -v /etc/opensds:/etc/opensds opensdsio/opensds-controller:latest
+# 	docker run -d --net=host -v /etc/opensds:/etc/opensds sodafoundation/controller:latest
 
 FROM ubuntu:16.04
 MAINTAINER Leon Wang <wanghui71leon@gmail.com>

@@ -52,7 +52,7 @@ metricexporter:
 
 docker: build
 	cp $(BUILD_DIR)/bin/osdslet ./cmd/osdslet
-	docker build cmd/osdslet -t opensdsio/opensds-controller:latest
+	docker build cmd/osdslet -t sodafoundation/controller:latest
 
 test: build
 	install/CI/test
