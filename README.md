@@ -1,7 +1,7 @@
 # SODA Controller
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/sodafoundation/controller?branch=master)](https://goreportcard.com/report/github.com/sodafoundation/controller)
-[![Build Status](https://travis-ci.org/sodafoundation/controller.svg?branch=master)](https://travis-ci.org/sodafoundation/controller)
+[![Build Status](https://github.com/sodafoundation/controller/actions/workflows/ci.yml/badge.svg)](https://github.com/sodafoundation/controller/actions/workflows/ci.yml)
 [![codecov.io](https://codecov.io/github/sodafoundation/controller/coverage.svg?branch=master)](https://codecov.io/github/sodafoundation/controller?branch=master)
 [![Releases](https://img.shields.io/github/release/sodafoundation/controller/all.svg?style=flat-square)](https://github.com/sodafoundation/controller/releases)
 [![LICENSE](https://img.shields.io/github/license/sodafoundation/controller.svg?style=flat-square)](https://github.com/sodafoundation/controller/blob/master/LICENSE)
