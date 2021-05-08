@@ -1,0 +1,51 @@
+name: SODA Controller CI Build
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    env:
+      GO111MODULE: on
+      TARGET: amd64
+        
+    strategy:
+      matrix:
+        go-version: [1.12.x, 1.13.x]
+        os: [ubuntu-16.04]
+
+    runs-on: ${{ matrix.os }}
+    steps:
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: ${{ matrix.go-version }}
+
+    - name: Checkout project  
+      uses: actions/checkout@v2
+
+    - name: Symlink source into GOPATH for controller
+      run: |
+        mkdir -p $(go env GOPATH)/src/github.com/sodafoundation/controller
+        sudo ln -s $(pwd) $(go env GOPATH)/src/github.com/sodafoundation/controller
+      
+    - name: Install Pre-requisites
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential gcc
+        sudo apt-get install -y librados-dev librbd-dev
+        sudo apt-get install -y lvm2 tgt open-iscsi
+        sudo docker pull p1c2u/openapi-spec-validator
+      
+    - name: Build the binaries
+      run: |
+        make all
+
+    - name: Run CI scripts for Testing
+      run: ./install/CI/coverage && ./install/CI/test
+    
+    - name: After success run Codecov Coverage tool.
+      uses: codecov/codecov-action@v1
+    
+    - name: Clean up the build
+      run: |
+        make clean
