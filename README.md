@@ -12,6 +12,9 @@
 
 SODA Controller is an open source implementation for all the control services (like metadata management, scheduler, other bookkeeping, utils etc) . This is currently added a separate repository considering many core services could be developed under this for the overall data store framework.
 
+It is part of SODA Terra (SDS Controller). There are other two repositories part of SODA Terra viz., [API](https://github.com/sodafoundation/api) and [Dock](https://github.com/sodafoundation/dock)
+
+
 In the API flow from SODA API to SODA DOCK, controller plays a critical role for all the API flow management and tracking to handle all the state machine and metadata management requirements. This will be a layer to keep addons to new services or facilities or utilities for the soda data platform
 
 This layer can be optional going forward or pick and use needed services from the controller during the deployment. However, the users need to do certain integration with api and dock for their controller modules in such cases
